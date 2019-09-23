@@ -19,21 +19,17 @@ class BattleShipBoard:
             
         
     def printLayout(self):
+        self.perpareLayout();
         for i in self.layout:
             print('{}'.format(i));
-
+    
 board = BattleShipBoard(3);
-board.perpareLayout();
-board.printLayout();
 
-print();
 
-board.layout[0].pop();
 
-board.printLayout();
 
-print();
 
-board.layout[1][0] = 'X';
 
-board.printLayout();
+
+
+    
